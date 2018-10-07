@@ -1,6 +1,6 @@
 class TransactionSerializer < ActiveModel::Serializer
   attributes :id,
-             :result
-
-  belongs_to :invoice
+             :result,
+             :invoice_id,
+             :credit_card_number
 end
